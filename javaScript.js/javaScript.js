@@ -2,7 +2,7 @@ const calculateBtn = document.querySelector(".calculateBtn");
 
 const billTotalElement = document.querySelector(".billTotal");
 
-const billStringField = document.querySelector(".billString");
+const billField = document.querySelector(".billString");
 
 const billTotalSpanElement = document.querySelector(".total");
 
@@ -29,6 +29,8 @@ const billTotalSpanElement = document.querySelector(".total");
 // return roundedBillTotal;
 // }
 
+// var instance = CalculateBill()
+
 function styleTotalColor(roundedBillTotal) {
 
     // const currentTotal = Number(roundedBillTotal);
@@ -45,9 +47,10 @@ function styleTotalColor(roundedBillTotal) {
     // }
 }
 
+
 function calculateBtnClicked() {
 
-    var billString = billStringField.value;
+    var billString = billField.value;
 
     const roundedBillTotal = CalculateBill(billString);
 
