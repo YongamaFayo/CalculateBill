@@ -62,7 +62,7 @@ function calculateBtnClicked() {
     billTotalSpanElement.classList.remove("warning");
 
     if (currentTotal >= 30) {
-        alert(currentTotal)
+        // alert(currentTotal)
         billTotalSpanElement.classList.add("danger");
     }
     else if (currentTotal >= 20 && currentTotal < 30) {
